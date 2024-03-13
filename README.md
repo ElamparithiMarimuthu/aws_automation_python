@@ -1,12 +1,13 @@
-AWS Compliance Automation with Lambda and Python
-Project Overview
+AWS Compliance Automation with Lambda and Python : 
+
+Project Overview : 
 This project focuses on automating AWS compliance management by ensuring that every EC2 instance created within an organization's AWS account is properly tagged with the owner's name. In organizations with multiple IAM users for developers, maintaining compliance can be challenging. This project aims to streamline the process by automatically tagging EC2 instances with the responsible developer's name upon creation.
 
-Project Aim
+Project Aim : 
 The primary goal of this project is to automate the tagging of EC2 instances with the owner's name to ensure compliance with organizational policies. By implementing this automation, manual workload is reduced, and the risk of non-compliance due to human error is minimized. The project targets DevOps engineers responsible for managing AWS infrastructure and aims to simplify compliance monitoring and enforcement.
 
 Solution Overview
-Architecture
+Architecture : 
 Lambda Function: Implemented in Python using AWS Lambda, the function is triggered by CloudTrail events for EC2 instance launches.
 Event-Driven Approach: EventBridge (formerly CloudWatch Events) is used to trigger the Lambda function upon specific API activities, such as EC2 instance launches.
 Boto3 SDK: The Python Boto3 library is utilized to interact with AWS services, enabling the Lambda function to tag EC2 instances with the owner's name dynamically.
@@ -24,5 +25,5 @@ Future Enhancements
 Enhanced Tagging Logic: Implement additional tagging logic based on organizational requirements or metadata associated with EC2 instances.
 Integration with Compliance Tools: Integrate the automation solution with third-party compliance tools for comprehensive compliance management and reporting.
 
-License
+License : 
 This project is licensed under the MIT License.
